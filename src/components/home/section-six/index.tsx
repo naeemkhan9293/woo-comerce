@@ -97,8 +97,8 @@ const cardData: CardDefs[] = [
 export const HomeSectionSix = () => {
   return (
     <div className="m-5 flex gap-3">
-      {cardData.map((item) => (
-        <Card data={item} />
+      {cardData.map((item, idx) => (
+        <Card data={item} key={idx} />
       ))}
     </div>
   );

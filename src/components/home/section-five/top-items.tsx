@@ -38,8 +38,8 @@ export const TopItems = ({
           <Button className="w-40">{link}</Button>
         </div>
         <div className="flex flex-wrap gap-5 max-w-2xl">
-          {ProductCardData.map((item) => (
-            <ProductCard data={item} key={item.id} />
+          {ProductCardData.map((item, idx) => (
+            <ProductCard data={item} key={idx} />
           ))}
         </div>
       </div>
